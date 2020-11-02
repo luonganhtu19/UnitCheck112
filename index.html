@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    #number,#arr{
+        display: inline-block;
+    }
+    #untilNumber{
+        width: 300px;
+        height: 30px;
+    }
+</style>
+<body>
+<div id="number" class="number">
+    <fieldset>
+        <legend>Number</legend>
+        <p id="untilNumber" >Result :</p>
+        <input type="button" onclick="checkNumber()" value="Unit 1">
+        <input type="button" onclick="unit2Prime()" value="Unit 2">
+        <input type="button" onclick="uni3Prime()" value="Unit 3">
+        <input type="button" onclick="reset()" value="reset">
+    </fieldset>
+</div>
+<br>
+<div id="arr" class="arr">
+        <fieldset>
+            <legend>Arr</legend>
+            <table>
+                <tr>
+                    <p id="outPut"> Result Arry: </p>
+                </tr>
+                <tr>
+                    <label for="addArr"> Input </label>
+                    <input type="number" name="addArr" id="addArr" placeholder="input">
+                    <input type="button" name="add" value="ADD" onclick="addArry()">
+                    <input type="button" name="display" value="Display" onclick="displayArr()">
+                    <input type="button" name="checkPrime2" value="checkPrime" onclick="checkPrime2()" >
+                    <input type="button" name="clear" value="Clear" onclick="clearScreen(1)">
+                    <br>
+                    <br>
+                    <label for="checkIndex"> Number </label>
+                    <input type="number" name="checkIndex" id="checkIndex" placeholder="Number">
+                    <input type="button" value="Search" onclick="checkNumber()">
+                    <input type="button" value="Delete" onclick="deleteArr()">
+                    <input type="button" value="Sort" onclick="sortArr()">
+                    <br>
+                    <br>
+                    <label for="checkIndex"> Number </label>
+                    <input type="number" name="checkIndex" id="addSort" placeholder="Number">
+                    <input type="button" value="AddSort" onclick="inSorArr()">
+                </tr>
+            </table>
+        </fieldset>
+</div>
+</body>
+<script src="Unit.js"></script>
+</html>
